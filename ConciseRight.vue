@@ -1,24 +1,24 @@
 <template>
-  <div class="w-full p-4 md:p-8" :class="getBackGround()">
+  <div class="w-full p-6 pb-12 md:px-20 md:py-12" :class="getBackGround()">
     <!-- Link to edit this layout. -->
     <button v-if="authorized" class="editBtn absolute left-0 top-0 m-2">
       <router-link :to="`/admin/layouts/${layout._id}`">
         <img src="/images/icons/Edit.svg" alt="Edit" width="25px" />
       </router-link>
     </button>
-    <div class="md:grid md:grid-cols-5">
-      <div class="col-span-2 md:p-8 hidden md:block">
-        <img :src="layout.imgPath" alt="" />
+    <div class="md:grid md:grid-cols-2 gap-24">
+      <div class="md:col-span-1 md:w-10/12 md:mx-auto overflow-hidden rounded-sm shadow-md hidden md:block">
+        <img :src="layout.imgPath" alt="" class="object-cover h-full w-full" />
       </div>
-      <div class="col-span-3 flex items-center">
+      <div class="md:col-span-1 flex items-center my-4">
         <div>
-          <h2>{{ layout.title }}</h2>
+          <h1 class="font-medium">{{ layout.title }}</h1>
           <p v-html="layout.content"></p>
-          <button v-if="layout.button" @click="goToEnrollNow" class="btn-action">Enroll Now</button>
+          <button v-if="layout.button" @click="goToEnrollNow" class="btn-action rounded-full md:rounded w-full md:w-32 h-12 my-8 md:my-6 md:h-auto">Enroll Now</button>
         </div>
       </div>
-      <div class="md:hidden">
-        <img :src="layout.imgPath" alt="" />
+      <div class="overflow-hidden rounded-sm shadow-md md:hidden">
+        <img :src="layout.imgPath" alt="" class="object-cover h-full w-full" />
       </div>
     </div>
   </div>
