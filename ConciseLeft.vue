@@ -1,5 +1,5 @@
 <template>
-  <div class="w-full p-6 pb-12 md:px-20 md:py-12" :class="getBackGround()">
+  <div class="w-full p-6 pb-12 md:px-20 md:py-12 relative" :class="getBackGround()">
     <!-- Link to edit this layout. -->
     <button v-if="authorized" class="editBtn absolute left-0 top-0 m-2">
       <router-link :to="`/admin/layouts/${layout._id}`">
@@ -11,7 +11,13 @@
         <div>
           <h1 class="font-medium">{{ layout.title }}</h1>
           <p v-html="layout.content"></p>
-          <button v-if="layout.button" @click="goToEnrollNow" class="btn-action rounded-full md:rounded w-full md:w-32 h-12 my-8 md:my-6 md:h-auto">Enroll Now</button>
+          <button
+            v-if="layout.button"
+            @click="goToEnrollNow"
+            class="btn-action rounded-full md:rounded w-full md:w-32 h-12 my-8 md:my-6 md:h-auto"
+          >
+            Enroll Now
+          </button>
         </div>
       </div>
       <div class="md:col-span-1 md:h-96 lg:h-128 md:my-auto md:mx-auto overflow-hidden rounded-sm shadow-md">
