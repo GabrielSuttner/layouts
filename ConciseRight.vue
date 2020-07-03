@@ -7,7 +7,7 @@
       </router-link>
     </button>
     <div class="md:grid md:grid-cols-2 gap-24">
-      <div class="md:col-span-1 md:w-10/12 md:mx-auto overflow-hidden rounded-sm shadow-md hidden md:block">
+      <div class="md:col-span-1 md:h-96 lg:h-128 md:my-auto md:mx-auto overflow-hidden rounded-sm shadow-md hidden md:block">
         <img :src="layout.imgPath" alt="" class="object-cover h-full w-full" />
       </div>
       <div class="md:col-span-1 flex items-center my-4">

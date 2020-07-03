@@ -14,7 +14,7 @@
           <button v-if="layout.button" @click="goToEnrollNow" class="btn-action rounded-full md:rounded w-full md:w-32 h-12 my-8 md:my-6 md:h-auto">Enroll Now</button>
         </div>
       </div>
-      <div class="md:col-span-1 md:w-10/12 md:mx-auto overflow-hidden rounded-sm shadow-md">
+      <div class="md:col-span-1 md:h-96 lg:h-128 md:my-auto md:mx-auto overflow-hidden rounded-sm shadow-md">
         <img :src="layout.imgPath" alt="" class="object-cover h-full w-full" />
       </div>
     </div>
