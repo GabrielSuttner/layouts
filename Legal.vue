@@ -19,7 +19,7 @@
       :style="setBackground"
       style="height: 15vh;"
     >
-      <h1 class="text-black">{{ layout.title }}</h1>
+      <h2 class="text-black">{{ layout.title }}</h2>
     </div>
 
     <!-- <div class="overflow-hidden absolute" :class="{'bg-gray-700': !layout.imgPath}" style="height:73vh; width:40%; top:15vh; right:5%;">
