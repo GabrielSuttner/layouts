@@ -1,5 +1,5 @@
 <template>
-<!-- test -->
+  <!-- test -->
   <div class="w-full p-6 pb-12 md:px-20 md:py-12 relative" :class="getBackGround()">
     <!-- Link to edit this layout. -->
     <button v-if="authorized" class="editBtn absolute left-0 top-0 m-2">
@@ -8,12 +8,14 @@
       </router-link>
     </button>
     <div class="md:grid md:grid-cols-2 gap-24">
-      <div class="md:col-span-1 md:h-96 lg:h-128 md:my-auto md:mx-auto overflow-hidden rounded-sm shadow-md hidden md:block">
+      <div
+        class="md:col-span-1 md:h-96 lg:h-128 md:my-auto md:mx-auto overflow-hidden rounded-sm shadow-md hidden md:block"
+      >
         <img :src="layout.imgPath" alt="" class="object-cover h-full w-full" />
       </div>
       <div class="md:col-span-1 flex items-center my-4">
         <div>
-          <h1 class="font-medium">{{ layout.title }}</h1>
+          <h2 class="font-medium">{{ layout.title }}</h2>
           <p v-html="layout.content"></p>
           <button
             v-if="layout.button"

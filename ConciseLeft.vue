@@ -9,7 +9,7 @@
     <div class="md:grid md:grid-cols-2 gap-24">
       <div class="md:col-span-1 flex items-center my-4">
         <div>
-          <h1 class="font-medium">{{ layout.title }}</h1>
+          <h2 class="font-medium">{{ layout.title }}</h2>
           <p v-html="layout.content"></p>
           <button
             v-if="layout.button"
@@ -20,7 +20,9 @@
           </button>
         </div>
       </div>
-      <div class="md:col-span-1 md:h-96 lg:h-128 md:my-auto md:mx-auto overflow-hidden rounded-sm shadow-md">
+      <div
+        class="md:col-span-1 md:h-96 lg:h-128 md:my-auto md:mx-auto overflow-hidden rounded-sm shadow-md"
+      >
         <img :src="layout.imgPath" alt="" class="object-cover h-full w-full" />
       </div>
     </div>
