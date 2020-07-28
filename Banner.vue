@@ -7,7 +7,7 @@
     </button>
     <a
       href="tel:8014104998"
-      class="absolute right-0 mr-2 sm:mr-0 sm:right-2 top-1 text-white hover:text-gray-300"
+      class="absolute right-0 mr-2 sm:mr-0 sm:right-2 top-1 text-white hover:text-neutral"
     >
       <font-awesome-icon class="mr-2 text-xl -mb-px" icon="phone-alt" />
       <span class="hidden sm:inline-block">(801) 410-4998</span>

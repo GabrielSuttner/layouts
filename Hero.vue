@@ -16,7 +16,7 @@
 
     <!-- Text -->
     <div
-      class="text-left font-semibold absolute sm:relative bottom-2 left-1 right-1 sm:bottom-auto sm:left-auto sm:right-auto text-black sm:text-gray-900 sm:flex sm:items-center sm:px-8"
+      class="text-left font-semibold absolute sm:relative bottom-2 left-1 right-1 sm:bottom-auto sm:left-auto sm:right-auto text-black sm:text-neutral-darkest sm:flex sm:items-center sm:px-8"
     >
       <div>
         <h1>{{ layout.title }}</h1>

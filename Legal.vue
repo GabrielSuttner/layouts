@@ -3,7 +3,7 @@
 -->
 <template>
   <div
-    class="w-full bg-gray-100 break-words pb-20 relative text-left"
+    class="w-full break-words pb-20 relative text-left"
     style="min-height: 100vh; word-break: break-word;"
   >
     <!-- Link to edit this layout. -->
@@ -15,7 +15,7 @@
 
     <div
       class="heroHeader flex items-center justify-center w-full px-10"
-      :class="{ 'bg-blue-glow-light': !layout.imgPath }"
+      :class="{ 'bg-accent-b': !layout.imgPath }"
       :style="setBackground"
       style="height: 15vh;"
     >

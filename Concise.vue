@@ -3,7 +3,7 @@
 -->
 <template>
   <div
-    class="w-full bg-gray-100 break-words relative sm:flex items-center text-left px-8 pt-24 pb-8 sm:p-24"
+    class="w-full break-words relative sm:flex items-center text-left px-8 pt-24 pb-8 sm:p-24"
     style="height: 90vh; word-break: break-word;"
   >
     <!-- Link to edit this layout. -->
@@ -23,7 +23,7 @@
       <!-- <div class="absolute bg-gray-400" style="top: 6rem; left: 2vw; width: 60vw; height: 53vh;"></div> -->
       <div
         class="overflow-hidden absolute h-full top-0 left-0 w-full"
-        :class="{ 'bg-gray-700': !layout.imgPath }"
+        :class="{ 'bg-neutral-dark': !layout.imgPath }"
         style="opacity: 0.7;"
       >
         <img :src="layout.imgPath" class="h-full object-cover rounded-sm mx-auto" />
@@ -47,12 +47,12 @@
         Where layered color divs are displayed
       -->
       <div
-        class="absolute bg-gray-400"
+        class="absolute bg-neutral"
         style="top: 6rem; right: 24vw; width: 26vw; height: 53vh;"
       ></div>
       <div
         class="overflow-hidden absolute"
-        :class="{ 'bg-gray-700': !layout.imgPath }"
+        :class="{ 'bg-neutral-dark': !layout.imgPath }"
         style="height: 73vh; width: 40%; top: 15vh; right: 5%;"
       >
         <img :src="layout.imgPath" class="h-full object-cover rounded-sm mx-auto" />

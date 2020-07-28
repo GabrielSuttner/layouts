@@ -1,5 +1,5 @@
 <template>
-  <div class="w-full p-6 pb-12 md:px-20 md:py-12 relative" :class="getBackGround()">
+  <div class="w-full p-6 pb-12 md:px-20 md:py-12 relative" :class="getBackground()">
     <!-- Link to edit this layout. -->
     <button v-if="authorized" class="editBtn absolute left-0 top-0 m-2">
       <router-link :to="`/admin/layouts/${layout._id}`">
@@ -41,9 +41,9 @@ export default {
     },
   },
   methods: {
-    getBackGround() {
+    getBackground() {
       if (this.index % 2) {
-        return 'bg-gray-200';
+        return 'bg-neutral-light';
       }
       return 'bg-white';
     },

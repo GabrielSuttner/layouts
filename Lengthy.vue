@@ -3,19 +3,19 @@
 -->
 <template>
   <div
-    class="w-full bg-gray-100 break-words pb-20 relative text-left"
+    class="w-full break-words pb-20 relative text-left"
     style="min-height: 100vh; word-break: break-word;"
   >
     <!-- Link to edit this layout. -->
     <button v-if="authorized" class="editBtn absolute left-0 top-0 m-2">
-      <router-link :to="`/admin/layout/${layout._id}`">
+      <router-link :to="`/admin/layouts/${layout._id}`">
         <img src="/images/icons/Edit.svg" alt="Edit" width="25px" />
       </router-link>
     </button>
 
     <div
       class="heroHeader flex items-center justify-center w-full px-16"
-      :class="{ 'bg-blue-glow-light': !layout.imgPath }"
+      :class="{ 'bg-accent-b': !layout.imgPath }"
       :style="setBackground"
       style="height: 45vh;"
     >
