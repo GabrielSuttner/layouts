@@ -16,7 +16,10 @@
       </span>
     </router-link>
 
-    <div class="bg-primary py-4 px-10 font-medium text-white" v-html="layout.content"></div>
+    <!-- <div class="bg-primary py-4 px-10 font-medium text-white" v-html="layout.content"></div> -->
+    <div class="bg-feedbackError py-4 px-10 font-medium text-white">
+      This site is currently under construciton. No pricing is final.
+    </div>
 
     <a
       href="tel:8014104998"
